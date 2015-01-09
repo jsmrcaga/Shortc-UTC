@@ -1,0 +1,66 @@
+
+/*
+******************************************
+CODE SOURCE "SOURCE" ECRIT PAR JO COLINA
+
+ MERCI DE NE PAS ELIMINER CE COMMENTAIRE
+
+Original source code and idea, prototype and design
+property of Jo Colina
+*******************************************/
+body{
+	min-width:980px;
+	text-align:center;
+	/*background: url('../images/fondAbout1.jpg');*/
+	font-family: Lucida, Verdana;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+code{
+	background:#ebebeb;
+	border-radius:5px;
+	border:2px !important;
+	border-color: #AAAAAA;
+	font-size: 16px;
+	font-family: Consolas, Ubuntu, Verdana;
+	font-style: italic; 
+}
+
+#all{
+	width:70%;
+	margin:0 auto;
+	top:0px;
+	text-shadow: 0px 0px 10px #FFF;
+}
+
+#header{
+	position:absolute;
+	top:0px;
+	height:150px;
+	width:70%;
+	top:0px;
+	/*border:0;*/
+	padding-top:20;
+}
+
+#content{
+	position:absolute;
+	top:270px;
+	width:70%;
+	font-size:16px !important;
+	text-align:left;
+	text-indent:15px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 0px 2px #224CFF;
+	padding: 10px 10px 10px 10px;
+}
+
+#footer{
+	position:absolute;
+	font-size:13px !important;
+	height:150px;
+	bottom:0px;
+	width:70%;
+}

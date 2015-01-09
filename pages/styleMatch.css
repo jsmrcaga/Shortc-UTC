@@ -1,0 +1,26 @@
+body{
+	min-width:90%;
+	text-align:center;
+}
+
+#all{
+	width:90%;
+	margin:0 auto;
+}
+
+.edtDiv{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.edtDiv object{
+	opacity:0.5;
+	width:1000px !important;
+	height:600px;
+}
+.edtDiv iframe{
+	opacity:0.5;
+	width:1000px !important;
+	height:600px;
+}

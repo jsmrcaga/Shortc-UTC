@@ -1,3 +1,13 @@
+// ******************************************
+// CODE SOURCE "SOURCE" ECRIT PAR MIKE NKUNKU
+
+//  MERCI DE NE PAS ELIMINER CE COMMENTAIRE
+
+// Original source code and idea, prototype and design
+// property of Mike Nkunku
+// OPEN SOURCE 
+// ******************************************
+
 jQuery(function(){
 	jQuery(document).ready(function() {
 		jQuery("#commandSelect").select2();

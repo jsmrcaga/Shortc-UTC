@@ -1,41 +1,57 @@
 <html>
-<head>
-	<title>help</title>
-</head>
-<body>
-<div id="all">
-	<div id="header">
-		<table>
-			<tr>
-				<td>
-					UT Hub
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<ul>
-						<li>assos</li>
-						<li>ent</li>
-						<li>edt</li>
-						<li>map |dir/v| \word1-asd\ \word2-if-necessary\</li>
-						<li>fb |user/group| \search\</li>
-						<li>twitter \search\</li>
-						<li>g \search\</li>
-						<li>dossier</li>
-						<li>boobs</li>
-						<li>login |nom| |prenom|</li>
-						<li>short |url|</li>
-						<li></li>
-					</ul>
-				</td>	
-			</tr>
-		</table>
-	</div>
-
-	<div id="content">
-		
-	</div>
-
-</div>
-</body>
+	<head>
+		<meta http-equiv="content" type="text/html"; charset="UTF-8"/>
+		<title>Shortcut'UTC - Page d'aide</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/help.js"></script>		
+		<script type="text/javascript">
+		</script>
+		<link href="help.css" rel="stylesheet" media="all" type="text/css"> 
+	</head>
+	<body>
+		<div id="helpContent">
+			<div>
+				<div id="commandDiv">
+					<select id="commandSelect">
+						<option value="">Toutes les commandes</option>
+						<option value="assos">assos</option>
+						<option value="boobs">boobs</option>
+						<option value="dossier">dossier</option>
+						<option value="edt">edt</option>
+						<option value="fb">fb</option>
+						<option value="g">g</option>
+						<option value="login">login</option>
+						<option value="map">map</option>
+						<option value="short">short</option>
+						<option value="twitter">twitter</option>
+					</select>
+				</div>
+				<dl id="commandsList">
+					<dt class="keyword commandHelp assos" id="assos">assos</dt>
+					<dd class="commandHelp assos" id="assosHelp">Permet d'accéder au portail des associations</dd>
+					<dt class="keyword commandHelp boobs" id="boobs">boobs</dt>
+					<dd class="commandHelp boobs" id="boobsHelp">Redirige vers une page de test au contenu ... spécial :-P</dd>
+					<dt class="keyword commandHelp dossier" id="dossier">dossier</dt>
+					<dd class="commandHelp dossier" id="dossierHelp">Permet d'accéder à son dossier étudiant si connecté</dd>
+					<dt class="keyword commandHelp edt" id="edt">edt</dt>
+					<dd class="commandHelp edt" id="edtHelp">Affiche son propre emploi du temps</dd>
+					<dt class="keyword commandHelp fb" id="fb">fb <span class="italic">search</span></dt>
+					<dd class="commandHelp fb" id="fbHelp">Recherche Facebook d'un groupe, d'une page, d'un utilisateur ...</dd>
+					<dt class="keyword commandHelp g" id="g">g <span class="italic">search</span></dt>
+					<dd class="commandHelp g" id="gHelp">Recherche sur Google</dd>
+					<dt class="keyword commandHelp login" id="login">login <span class="italic">lastname firstname</span></dt>
+					<dd class="commandHelp login" id="loginHelp">Permet d'obtenir le login UTC d'un étudiant</dd>
+					<dt class="keyword commandHelp map" id="map">map</dt>
+					<dt class="commandHelp map mapV" id="mapV">v <span class="italic">place</span></dt>
+					<dd class="commandHelp map mapV" id="mapVHelp">Cherche dans Google Maps le lieu</dd>
+					<dt class="commandHelp map mapDir" id="mapDir">dir <span class="italic">start goal</span></dt>
+					<dd class="commandHelp map mapDir" id="mapDirHelp">Itinéraire dans Google Maps de <span class="italic">start</span> à <span class="italic">goal</span> en voiture</dd>
+					<dt class="keyword commandHelp short" id="short">short <span class="italic">url</span></dt>
+					<dd class="commandHelp short" id="shortHelp">Permet d'obtenir un lien de redirection pour l'URL passée en argument</dd>
+					<dt class="keyword commandHelp twitter" id="twitter">twitter <span class="italic">search</span></dt>
+					<dd class="commandHelp twitter" id="twitterHelp">Recherche sur Twitter</dd>
+				</dl>
+			</div>
+		</div>
+	</body>
 </html>

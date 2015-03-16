@@ -61,14 +61,9 @@ where=document.getElementById(where);
 }
 
 function goTo(where){
-frame=document.getElementById('contentFrame');
-frame.src=where;
-
+	frame=document.getElementById('contentFrame');
+	frame.src=where;
 }
-// function goTo(where){
-// 	frame=document.getElementById('contentObject');
-// 	frame.setAttribute("data",where);
-// }
 
 function closeWindow(){
 window.close();

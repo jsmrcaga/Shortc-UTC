@@ -2,6 +2,7 @@
 <!-- 
 ******************************************
 CODE SOURCE "SOURCE" ECRIT PAR JO COLINA
+DESIGN AMELIORE PAR MIKE NKUNKU
 
  MERCI DE NE PAS ELIMINER CE COMMENTAIRE
 
@@ -11,19 +12,24 @@ property of Jo Colina
 <HTML>
 	<HEAD profile="http://www.w3.org/2005/10/profile">
 		<link rel="icon" type="image/ico" href="favicon.ico" />
+		<meta http-equiv="content-type" content="text/html" ; charset="UTF-8" />
 		<TITLE>Shortc'UTC</TITLE>
-		<style>
+		<style type="text/css">
 		@import url('entStyle.css');
+		@import url('pages/help.css');
+		@import url("font-awesome-4.3.0/css/font-awesome.css");
 		</style>
 		<script src="js/annyang.js"></script>
 		<script src="js/dico.js"></script>
 		<script src="jquery-ui/js/jquery-1.10.2.js"></script>
 		<script src="js/jquery.js"></script>
 		<script src="js/shortcut.js"></script>
-		<script src="js/loginUTC.js"></script>
 		<script src="js/script.js"></script>
 		<link href="jquery-ui/css/ui-darkness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
 		<script src="jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
+		<script src="js/loginUTC.js"></script>
+		
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		
 	</HEAD>
 
@@ -117,11 +123,11 @@ property of Jo Colina
 				<TD class="alLeft">
 				<table class="menuLeftTable">
 				<tr>
-				<td class="logOutTD" onclick="javascript:window.close();"><img id="logOutImg" src="images/logNormal.png"></td><td id="optionsTD" onclick="showHide('arrowUpOpt'); showHide('options'); hide('moiMenu'); hide('menuAsso');">Options</td>
+				<td class="logOutTD" onclick="javascript:window.close();"><i class="fa fa-times" onclick="logOutUTC();"></i></td><td id="optionsTD" onclick="showHide('arrowUpOpt'); showHide('options'); hide('moiMenu'); hide('menuAsso');">Options</td>
 				</tr>
 				</table>
 				</TD>
-				<TD class="alCenter"><input type="text" id="commandBox" placeholder="Tapez votre commande" /></TD>
+				<TD class="alCenter"><input type="text" id="commandBox" placeholder="Tapez votre commande ..." /></TD>
 				<TD class="alRight">
 				<table  class="menuRightTable">
 				<tr>
@@ -250,10 +256,18 @@ property of Jo Colina
 
 <div id="mobile">
 	<div id="container">
-
-
 	</div>
-
+</div>
+<div id="disconnectCAS" title="Déconnexion">
+	<table border="0" id="disconnectTable">
+		<tr>
+			<td><i class="fa fa-exclamation-triangle"></i></td>
+			<td id="disconnectMessage">Êtes-vous sûr(e) de vouloir vous déconnecter du CAS UTC ?</td>
+		</tr>
+	</table>
+</div>
+<div id="alreadyDisconnected" title="Déconnexion déjà effectuée">
+	<div id="alreadyDisconnectedMessage">Votre déconnexion a bien été effectuée auparavant ...</div>
 </div>
 <?php
 	if(isset($_GET['q'])){

@@ -1,6 +1,3 @@
-#commandBox:hover{
-	border-color: black !important;
-}
 tr > td.iconTitle{
 	color: white;
 }
@@ -38,4 +35,54 @@ b[role="presentation"]{
 }
 #select2-commandSelect-container{
 	text-align: left;
+}
+
+td > i.fa.fa-times{
+	color : #fc5858;
+	font-size: 20px;
+}
+
+td > i.fa.fa-times:hover{
+	cursor: pointer;
+	color : red;
+	font-size: 27px;
+}
+
+/***** index *****/
+.alCenter > #commandBox {
+	outline: 1px solid #e3d6d6 !important;
+}
+
+.alCenter > #commandBox:focus{
+	border: 1px solid black;
+}
+
+#disconnectCAS, button[title="Close"] span.ui-button-text{
+	display: none;
+}
+
+button[title="Close"] {
+	float: right;
+}
+
+#disconnectCAS i.fa.fa-exclamation-triangle{
+	color: white;
+	font-size:30px;
+	float: left;
+}
+
+#disconnectMessage, #alreadyDisconnected{
+	float: right;
+}
+
+.ui-dialog .ui-dialog-buttonset{
+	padding: 10px;
+}
+
+.ui-dialog .ui-dialog-buttonset button{
+	margin-left: 20px;
+}
+
+.ui-dialog .ui-dialog-buttonset button:last-child{
+	margin: 0px 15px;
 }

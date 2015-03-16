@@ -125,6 +125,8 @@ var jsonDict={"dico":[
 	{"mot":"reinscription", "action":"goTo('https://demeter.utc.fr/pls/portal30/ETUDIANTS.REINSC_ADMIN_LIGNE_11_DYN.show')"},
 	{"mot":"inscription", "action":"goTo('http://wwwetu.utc.fr/rentree/')"},
 	{"mot":"sublime", "action":"window.open('http://wwwetu.utc.fr/~colinajo/sublime/SublimeText2.zip')", "nParam":1},
-	{"mot":"sublime-nix", "action":"window.open('http://wwwetu.utc.fr/~colinajo/sublime/SublimeText2nix.tar.bz2')", "nParam":1}
+	{"mot":"sublime-nix", "action":"window.open('http://wwwetu.utc.fr/~colinajo/sublime/SublimeText2nix.tar.bz2')", "nParam":1},	
+	{"mot":"home", "action":"goTo('pages/about.php')"},
+	{"mot":"homepage", "action":"goTo('pages/about.php')"}
 	]
 	};

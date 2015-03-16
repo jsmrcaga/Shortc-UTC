@@ -12,10 +12,11 @@ property of Jo Colina
 <head>
 	<title>About</title>
 	<head>
+		<meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
 		<style type="text/css">
-			@import url('styleAbout.css');
+			@import url("styleAbout.css");
+			@import url("../font-awesome-4.3.0/css/font-awesome.css");
 		</style>
-
 	</head>
 </head>
 <body>
@@ -26,17 +27,18 @@ property of Jo Colina
 	</div>
 
 	<div id="content">
-		<p>Bienvenue a UTHub, le site des UTC&eacute;ens qui leur permet de naviguer le world wide web! </br></p>
-		<b>Comment faire?</b>
+		<p>Bienvenue à UTHub, le site des UTCéens qui leur permet de naviguer le world wide web !</p>
+		<b>Comment faire ?</b>
 
-		<p>Tapez ce que vous voulez dans la barre! Si ca ne marche pas, pas de desespoir, suffit de taper <code>help</code> ou <code>h</code> ! </br>
-		Essayez de naviguer dans les sites de l'UTC, eg: tapez <code>dossier</code>, ou <code>assos</code> ;) (<code>alcool</code> et <code>pic</code> marchent aussi)!</p>
-
-
+		<p>
+			Tapez ce que vous voulez dans la barre !<br/>
+			Si ça ne marche pas, pas de désespoir, suffit de taper <code>help</code> ou <code>h</code> !</br>
+			Essayez de naviguer dans les sites de l'UTC, eg: tapez <code>dossier</code>, ou <code>assos</code> ;) (<code>alcool</code> et <code>pic</code> marchent aussi)!
+		</p>
 	</div>
 
 	<div id="footer">
-		*A l'exception de quelques substances dangereuses...
+		* À l'exception de quelques substances dangereuses...
 	</div>
 
 </div>

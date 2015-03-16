@@ -1,8 +1,40 @@
 
+/**********
 
+	FUNCTION DEFINED BY MIKE NKUNKU
 
+	PROPERTY OF MIKE NKUNKU
+
+	PLEASE DON'T DELETE THE COMMENT LINES ABOVE
 	
+**********/
 
+function logOutUTC(){
+	var contentFrameSrc = jQuery("#contentFrame").attr("src");
+	if (contentFrameSrc.indexOf("logout") > 0) {			
+		jQuery("#alreadyDisconnected").dialog({
+			height: 100,
+			width: 300,
+			resizable: false
+		});
+	} else {
+		jQuery("#disconnectCAS").dialog({
+			resizable: false,
+			height:130,
+			width:350,
+			modal: true,
+			buttons: {
+			"Oui": function() {
+				goTo("https://cas.utc.fr/cas/logout");
+				jQuery( this ).dialog( "close" );
+			},
+			"Annuler": function() {
+			  jQuery( this ).dialog( "close" );
+			}
+		  }
+		});
+	}
+}
 
         function loginUTC(lastName, firstName){
 		/*if(document.getElementById("all").style.opacity!=0.5){

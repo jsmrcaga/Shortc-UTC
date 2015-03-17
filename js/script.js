@@ -103,7 +103,30 @@ function tablerize(){
 }
 
 
+function relateMusic () {
+	var args = arguments;
+	var relations = "";
 
+	if (args.length > 1){
+		for (i = 0; i < args.length ; i++){
+			relations += args[i] + "+";
+		}
+	}else{
+		relations = args[0];
+	}
+
+	relations = relations.replace(" ", "+");
+
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "https://www.tastekid.com/ask/ws?q="+relations+"&f=testapp3930&k=ztzhzdljodm3&format=JSON", true);
+	xmlhttp.send();
+
+	var resp = xmlhttp.responseText;
+	resp = JSON.parse(resp);
+
+	console.log(resp);
+	
+}
 
 
 

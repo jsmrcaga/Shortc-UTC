@@ -120,11 +120,16 @@ var jsonDict={"dico":[
 	{"mot":"uvs", "action":"goTo('https://demeter.utc.fr/pls/portal30/ENSEIGNEMENT.CONSULT_ENSEG_TAB_DYN.show?p_arg_names=p_aff&p_arg_values=TAB')"},
 	{"mot":"uv", "action":"goTo('https://demeter.utc.fr/pls/portal30/ENSEIGNEMENT.CONSULT_ENSEG_TAB_DYN.show?p_arg_names=p_aff&p_arg_values=TAB')"},
 	{"mot":"enseignements", "action":"goTo('https://demeter.utc.fr/pls/portal30/ENSEIGNEMENT.CONSULT_ENSEG_TAB_DYN.show?p_arg_names=p_aff&p_arg_values=TAB')"},
-	{"mot":"3615", "action":"goTo('http://le3615utc.herokuapp.com/main/index#/')"},
+	{"mot":"3615", "action":"window.open('http://le3615utc.herokuapp.com/main/index#/')"},
 	{"mot":"annuaire", "action":"goTo('http://le3615utc.herokuapp.com/main/index#/')"},
 	{"mot":"reinscription", "action":"goTo('https://demeter.utc.fr/pls/portal30/ETUDIANTS.REINSC_ADMIN_LIGNE_11_DYN.show')"},
 	{"mot":"inscription", "action":"goTo('http://wwwetu.utc.fr/rentree/')"},
 	{"mot":"sublime", "action":"window.open('http://wwwetu.utc.fr/~colinajo/sublime/SublimeText2.zip')", "nParam":1},
-	{"mot":"sublime-nix", "action":"window.open('http://wwwetu.utc.fr/~colinajo/sublime/SublimeText2nix.tar.bz2')", "nParam":1}
+	{"mot":"sublime-nix", "action":"window.open('http://wwwetu.utc.fr/~colinajo/sublime/SublimeText2nix.tar.bz2')", "nParam":1},
+	{"mot":"gmail", "action":"window.open('http://gmail.com')"},
+	{"mot":"42", "action":"goTo('http://42.com')"},
+	{"mot":"sr01", "action":"window.open('http://wwwetu.utc.fr/~colinajo/ShortcUTC/SR01.zip')"},
+	{"mot":"SR01", "action":"window.open('http://wwwetu.utc.fr/~colinajo/ShortcUTC/SR01.zip')"},
+	{"mot":"music", "action":"relateMusic" , "nParam":1},
 	]
 	};

@@ -1,4 +1,50 @@
+/*****
+	FUNCTION CREATED BY MIKE NKUNKU
+	
+	PROPERTY OF MIKE NKUNKU
+	
+	DON'T TAKE AWAY THE LINES ABOVE
 
+*****/
+function logOutUTC() {
+	var contentFrame = jQuery("#contentFrame");
+	var oldURI = contentFrame.attr("src");
+	var urlCASOut = "https://cas.utc.fr/cas/logout";
+	if (contentFrame.attr("src") == urlCASOut) {
+		jQuery("#alreadyDisconnected").dialog();
+	} else {
+		jQuery("#disconnectCAS").dialog({
+			resizable: false,
+			height:140,
+			width: 300,
+			modal: true,
+			buttons: {
+				"Oui": function () {
+					goTo(urlCASOut);
+					jQuery(this).dialog("close");
+					jQuery("#redirectFromCASOut").dialog({
+						resizable: false,
+						height:140,
+						width: 300,
+						modal: true,
+						buttons: {
+							"Oui": function () {
+								jQuery(this).dialog("close");
+								goTo(oldURI);
+							},
+							"Non": function () {
+								jQuery(this).dialog("close");
+							}
+						}
+					});
+				},
+				"Non": function () {
+					jQuery(this).dialog("close");
+				}
+			}
+		});
+	}
+}
 
 
 	

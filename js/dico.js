@@ -131,5 +131,7 @@ var jsonDict={"dico":[
 	{"mot":"sr01", "action":"window.open('http://wwwetu.utc.fr/~colinajo/ShortcUTC/SR01.zip')"},
 	{"mot":"SR01", "action":"window.open('http://wwwetu.utc.fr/~colinajo/ShortcUTC/SR01.zip')"},
 	{"mot":"music", "action":"relateMusic" , "nParam":1},
+	{"mot":"home", "action":"goTo('./pages/about.php')"},
+	{"mot":"homepage", "action":"goTo('./pages/about.php')"},
 	]
 	};

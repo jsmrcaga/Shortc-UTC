@@ -34,7 +34,7 @@ property of Jo Colina
 		<p>Tapez ce que vous voulez dans la barre ! Si ça ne marche pas, pas de désespoir : il suffit de taper <code>help</code> ou <code>h</code> !</p>
 		<p>Essayez de naviguer dans les sites de l'UTC, eg: tapez <code>dossier</code>, ou <code>assos</code> ;-) (<code>alcool</code> et <code>pic</code> marchent aussi)!</p>
 	
-		<div id="footerBis">
+		<div id="footer">
 			*A l'exception de quelques substances dangereuses...
 		</div>
 	</div>

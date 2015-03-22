@@ -58,9 +58,7 @@ code{
 }
 
 #footer{
-	position:absolute;
-	font-size:13px !important;
-	height:150px;
-	bottom:0px;
-	width:70%;
+	text-align: center;
+	font-size: 11px;
+	font-style: italic;
 }
